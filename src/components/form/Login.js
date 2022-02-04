@@ -19,7 +19,7 @@ const Login = () => {
           "Content-type": "application/json",
         },
       };
-    const response = await axios.post(`http://localhost:5000/users/login`, {
+    const response = await axios.post(`https://form-mern-server.herokuapp.com/users/login`, {
         name, password
     }, config)
 			localStorage.setItem("token", response.data);

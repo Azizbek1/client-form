@@ -21,7 +21,7 @@ const Register = () => {
                   "Content-type": "application/json",
                 },
               };
-            const response = await axios.post(`http://localhost:5000/users/register`, {
+            const response = await axios.post(`https://form-mern-server.herokuapp.com/users/register`, {
                 name, password
             }, config)
             if(response){
